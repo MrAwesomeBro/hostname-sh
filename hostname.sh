@@ -5,8 +5,8 @@
 start() {
         /bin/rm -f /etc/HOSTNAME
 	echo "YourWantedHostname" > /etc/HOSTNAME
-        /bin/hostname srv1
-	/bin/domainname mysrv.de
+        /bin/hostname "YourWantedHostname"
+	/bin/domainname "YourWantedHostname"
 
 	# optional
 	#/bin/cp /etc/resolv.conf.meine /etc/resolv.conf
